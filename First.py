@@ -147,10 +147,17 @@ def increment(number, by = 1):
 print(increment(2))
 print(increment(2, 5))
 
-def multiply(numbers):
+#* allows to push multiple arguments in a function
+def multiply(*numbers):
     total = 1
     for number in numbers:
         total *= number
     return total
-print(multiply([2, 3, 4]))
+print(multiply(2, 3, 4))
+
+# ** Unpacking arguments
+def save_user(**user):
+    print(user)
+
+save_user(id=1, name="Nader", age=19)
 '''
