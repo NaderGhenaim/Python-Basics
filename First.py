@@ -524,13 +524,13 @@ class Stream:
     def __init__(self):
         self.opened = False
 
-    def open(self)
-       if self.opened:
+    def open(self):
+        if self.opened:
             raise InvalidOperationError("Stream is open")
         self.opened = True
 
-    def closed(self)
-       if not self.opened:
+    def closed(self):
+        if not self.opened:
             raise InvalidOperationError("Stream is closed")
         self.opened = False
 
