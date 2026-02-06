@@ -516,30 +516,30 @@
 # class FlyingFish(Flyer, Swimmer):
 #     pass
 
-class InvalidOperationError(Exception):
-    pass
+# class InvalidOperationError(Exception):
+#     pass
 
 
-class Stream:
-    def __init__(self):
-        self.opened = False
+# class Stream:
+#     def __init__(self):
+#         self.opened = False
 
-    def open(self):
-        if self.opened:
-            raise InvalidOperationError("Stream is open")
-        self.opened = True
+#     def open(self):
+#         if self.opened:
+#             raise InvalidOperationError("Stream is open")
+#         self.opened = True
 
-    def closed(self):
-        if not self.opened:
-            raise InvalidOperationError("Stream is closed")
-        self.opened = False
-
-
-class FileStream(Stream):
-    def read(self):
-        print("Reading data from file")
+#     def closed(self):
+#         if not self.opened:
+#             raise InvalidOperationError("Stream is closed")
+#         self.opened = False
 
 
-class NetworkStream(Stream):
-    def read(self):
-        print("Reading data from network")
+# class FileStream(Stream):
+#     def read(self):
+#         print("Reading data from file")
+
+
+# class NetworkStream(Stream):
+#     def read(self):
+#         print("Reading data from network")
