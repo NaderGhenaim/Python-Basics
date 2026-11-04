@@ -295,6 +295,7 @@
 
 # # Arrays, optimizes space for large lists of numbers
 # # only for performance problems, same as lists and tuples
+# # can use array.shape from external libraries to find shape of arrays 
 # from array import array
 
 # array("i", [1, 2, 3])
